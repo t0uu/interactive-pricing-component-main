@@ -278,12 +278,21 @@ body {
             align-items: center;
     margin: 1rem;
   }
-  .container .ContainerBeneficts span {
+  .container .ContainerBeneficts .BoxSpan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .ContainerBeneficts .BoxSpan span {
     color: var(--Grayish-Blue-Text);
     font-size: 15px;
     margin: 0.3rem;
   }
-  .container .ContainerBeneficts span img {
+  .container .ContainerBeneficts .BoxSpan span img {
     margin-right: 0.5rem;
   }
   .container .ContainerBtn {
@@ -340,6 +349,21 @@ body {
   }
   .container .month {
     display: none;
+  }
+  .container .ContainerBeneficts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container .ContainerBeneficts .BoxSpan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */
